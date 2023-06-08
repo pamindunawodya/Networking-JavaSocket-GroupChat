@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginContext" prefHeight="815.0" prefWidth="642.0" style="-fx-background-color: white; -fx-background-radius: 20px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginFormController">
+   <children>
+      <ImageView fitHeight="552.0" fitWidth="545.0" layoutX="51.0" layoutY="92.0" opacity="0.41" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/image/istockphoto-1328226119-612x612.jpg" />
+         </image></ImageView>
+      <Label alignment="CENTER" layoutX="220.0" layoutY="122.0" text="Hello ..">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="59.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUsername" focusColor="#960670" labelFloat="true" layoutX="87.0" layoutY="354.0" prefHeight="43.0" prefWidth="474.0" promptText="Username" style="-fx-background-color: white;">
+         <font>
+            <Font size="17.0" />
+         </font></JFXTextField>
+      <Separator prefWidth="200.0" />
+      <Label fx:id="lblError" layoutX="87.0" layoutY="650.0" prefHeight="21.0" prefWidth="474.0" textFill="#e11717" />
+      <Label alignment="CENTER" layoutX="150.0" layoutY="182.0" prefHeight="37.0" prefWidth="343.0" text="Login to your account ">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="23.0" />
+         </font>
+      </Label>
+      <QuadCurve controlX="-224.0" controlY="353.0101013183594" endX="96.0" endY="-104.35943603515625" fill="#72ade4" layoutX="546.0" layoutY="117.0" opacity="0.79" startX="96.0" startY="55.0" stroke="WHITE" strokeType="INSIDE" />
+      <QuadCurve controlX="-411.0" controlY="-178.0" endX="132.0" endY="-66.00000762939453" fill="#e85fcf" layoutX="510.0" layoutY="115.0" opacity="0.67" startX="132.0" startY="55.0" stroke="WHITE" strokeType="INSIDE" />
+      <ImageView fitHeight="349.0" fitWidth="329.0" layoutX="20.0" layoutY="451.0" opacity="0.58" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logo/my.png" />
+         </image></ImageView>
+      <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="190.0" layoutY="528.0" onAction="#loginOnAction" prefHeight="43.0" prefWidth="269.0" style="-fx-background-color: pink; -fx-background-radius: 30px;" text="LOGIN">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
